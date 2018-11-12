@@ -3,6 +3,9 @@ from tkinter import *
 
 def kg_Conversion():
     kg_float_value=float(kg_value.get())
+    gram_value.delete(1.0,END)
+    pounds_value.delete(1.0,END)
+    ounce_value.delete(1.0,END)
     gram_value.insert(END,kg_float_value*1000)
     pounds_value.insert(END,kg_float_value*2.20462)
     ounce_value.insert(END,kg_float_value*35.274)
