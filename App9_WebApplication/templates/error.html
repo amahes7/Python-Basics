@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/main.css" />
+        <title>Abhijeet Web Application</title>
+    </head>
+    <body >
+        <div class= "body">
+            <br><br><br><br><br><br>
+        <div class="heading">
+            <h3>Record for email exist. Please enter a new email id</h3><br>
+            <img src="{{url_for('static',filename='error.jpg')}}" alt="Error!!!!" height="300" width="300">
+        </div>
+        <div class= "form">
+                <form action ="{{url_for('mainPage')}}" method ="POST">
+                    <button type=submit name="submit">Back to MainMenu</button>
+                </form>
+            </div>
+    </body>
+</html>

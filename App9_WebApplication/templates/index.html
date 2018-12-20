@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/main.css" />
+        <title>Abhijeet Web Application</title>
+    </head>
+    <body >
+        <div class= "body">
+        <div class="heading">
+            <h1>Collection Heights</h1>
+            <h3>Please fill the enteries to get average height</h3>
+        </div>
+        <div class= "form">
+            <form action ="{{url_for('success')}}" method ="POST">
+                <input type="email" placeholder="Enter Email Id" name=email required><br/><br/>
+                <input type="number" placeholder="Enter Height in cm" name=height min =50,  max=300 required><br>
+                <input type="number" placeholder="Enter Weight in kg" name=weight min =50,  max=300 required><br>
+                <br />
+                <button type=submit name="submit">Submit</button>
+            </form>
+            <form action ="{{url_for('flush')}}" method ="POST">
+                    <button type=submit name="submit">Flush Database</button>
+            </form>
+        </div>
+    </body>
+</html>
